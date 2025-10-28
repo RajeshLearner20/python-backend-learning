@@ -1,1 +1,81 @@
+#Task1 - Number_Analyser
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("The number is positive.")    
+elif num < 0:
+    print("The number is negative.")    
+else:
+    print("The number is zero.")
+
+#Task2  - Even And Odd Counter
+num = [1,2,3,4,5,6,7,8,9,10]
+even_count = 0
+odd_count = 0   
+for i in num:
+    if i % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+print("Even numbers count:", even_count)
+print("Odd numbers count:", odd_count)
+
+#Task3 - Student Grade Calculator
+Marks = int(input("Enter The Student Marks:"))
+
+if Marks >= 90:
+    print("Grade A")
+elif Marks >= 75:
+    print("Grade B")            
+elif Marks >= 50:
+    print("Grade C")
+
+else:
+    print(" Fail")
+
+#Task4 - Pattern Printing
+star = int(input('Enter number of rows:'))
+for i in range(1, star + 1):
+    for j in range(1, i + 1):
+        print('*', end=' ')
+    print()
+
+#Task5 - Top Student
+Students = {'Alice': 85, 'Bob': 92, 'Charlie': 88, 'David': 95, 'Eva': 91 }
+top_student = max(Students, key=Students.get)
+print(f'The top student is {top_student} with a score of {Students[top_student]}.')
+
+#Task6 - String Reversel
+name = input("Enter a string to reverse: ")
+reversed_string = name[::-1]
+print("Reversed string:", reversed_string)  
+
+#Task7 - Mini Project
+
+# Simple Calculator Program
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+# Perform calculation using if-elif
+if operation == '+':
+    result = num1 + num2
+    print(f"Result: {result}")
+elif operation == '-':
+    result = num1 - num2
+    print(f"Result: {result}")
+elif operation == '*':
+    result = num1 * num2
+    print(f"Result: {result}")
+elif operation == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print(f"Result: {result}")
+    else:
+        print("Error: Division by zero is not allowed!")
+else:
+    print("Invalid operation! Please choose +, -, *, or /.")
+
+    
+
 
