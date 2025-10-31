@@ -1,0 +1,5 @@
+file = open("Student_details.txt" , "r+")
+file.write("Rajesh.\n")
+file.write("M.Sc Computer Science.\n")
+file.write("Periyar Arts College")
+file.close()
